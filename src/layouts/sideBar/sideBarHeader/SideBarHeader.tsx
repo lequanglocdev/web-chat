@@ -14,9 +14,9 @@ const SideBarHeader = ({ setShowMainLayout }: SideBarHeaderProps) => {
     <div className="border-b-[1px]">
       {isMobile ? (
         <div className="p-3 flex justify-between items-center">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center gap-2">
             <div
-              className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer hover:bg-[#1f2937] rounded-[6px] "
+              className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer dark:hover:bg-[#1f2937] rounded-[6px] "
               onClick={() => setShowMainLayout(true)}>
               <MdOutlineKeyboardArrowRight size={20} />
             </div>
