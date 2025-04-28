@@ -1,9 +1,13 @@
 import SideBarHeader from "./sideBarHeader/SideBarHeader";
 
-const SideBar = () => {
+interface SideBarProps {
+  setShowMainLayout: (show: boolean) => void;
+}
+
+const SideBar = ({ setShowMainLayout }: SideBarProps) => {
   return (
     <div className="h-screen p-2 dark:border border-l ">
-      <SideBarHeader />
+      <SideBarHeader setShowMainLayout={setShowMainLayout} />
     </div>
   );
 };
