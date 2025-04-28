@@ -1,0 +1,33 @@
+/* Thêm animation slide-in từ bên trái */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Áp dụng animation */
+.transition-layout {
+  transition: transform 0.3s ease-out;
+}
+
+.slideIn {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.slideOut {
+  animation: slideOut 0.3s ease-out forwards;
+}
